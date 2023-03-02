@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  application:
+    name: "application.yaml"
+
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/e_shop2_db
+    username: postgres
+    password: admin
+
+
+  flyway:
+    baseline-on-migrate: false
+
+
+
+
+
+
